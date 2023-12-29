@@ -4,12 +4,52 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  turbo:
-    specifier: ^1.11.2
-    version: 1.11.2
+importers:
+
+  .:
+    devDependencies:
+      config-eslint:
+        specifier: workspace:*
+        version: link:packages/configs/eslint
+      tsconfig:
+        specifier: workspace:*
+        version: link:packages/tsconfig
+      turbo:
+        specifier: ^1.11.2
+        version: 1.11.2
+      typescript:
+        specifier: ^5.2.2
+        version: 5.3.3
+
+  apps/doc: {}
+
+  apps/web: {}
+
+  packages/configs/eslint: {}
+
+  packages/configs/lintstaged: {}
+
+  packages/configs/prettier: {}
+
+  packages/configs/tailwind: {}
+
+  packages/scaffdog: {}
+
+  packages/trpc: {}
+
+  packages/tsconfig:
+    devDependencies:
+      '@tsconfig/strictest':
+        specifier: ^2.0.2
+        version: 2.0.2
+
+  packages/ui: {}
 
 packages:
+
+  /@tsconfig/strictest@2.0.2:
+    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+    dev: true
 
   /turbo-darwin-64@1.11.2:
     resolution: {integrity: sha512-toFmRG/adriZY3hOps7nYCfqHAS+Ci6xqgX3fbo82kkLpC6OBzcXnleSwuPqjHVAaRNhVoB83L5njcE9Qwi2og==}
@@ -69,4 +109,10 @@ packages:
       turbo-linux-arm64: 1.11.2
       turbo-windows-64: 1.11.2
       turbo-windows-arm64: 1.11.2
+    dev: true
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: true

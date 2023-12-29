@@ -1,18 +1,26 @@
 {
-	"name": "turborepo-template",
-	"private": true,
-	"scripts": {
+  "name": "turborepo-template",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write .",
-    "prepare": "husky install",
     "clean": "git clean -xdf node_modules"
-	},
-	"devDependencies": {
-		"turbo": "^1.11.2"
-	},
+  },
+  "devDependencies": {
+    "config-eslint": "workspace:*",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.11.2",
+    "typescript": "^5.2.2"
+  },
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/configs/*"
+  ]
 }

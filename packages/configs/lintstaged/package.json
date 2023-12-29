@@ -1,0 +1,9 @@
+{
+  "name": "config-lintstaged",
+  "version": "0.0.0",
+  "private": true,
+  "main": ".lintstaged.js",
+  "publishConfig": {
+    "access": "public"
+  }
+}
