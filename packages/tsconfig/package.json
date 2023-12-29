@@ -5,5 +5,8 @@
   "main": "tsconfig.json",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.2"
   }
 }
