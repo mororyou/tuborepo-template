@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig",
+  "extends": "@packages/tsconfig",
   "compilerOptions": {
     "outDir": "./dist"
   }

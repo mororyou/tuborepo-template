@@ -1,5 +1,5 @@
 {
-  "name": "scaffdog",
+  "name": "@packages/scaffdog",
   "version": "0.0.0",
   "private": true
 }

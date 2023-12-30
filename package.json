@@ -10,11 +10,11 @@
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
-    "config-eslint": "workspace:*",
-    "config-prettier": "workspace:*",
+    "@config/eslint": "workspace:*",
+    "@config/prettier": "workspace:*",
+    "@packages/tsconfig": "workspace:*",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.10",
-    "tsconfig": "workspace:*",
     "turbo": "^1.11.2",
     "typescript": "^5.2.2"
   },

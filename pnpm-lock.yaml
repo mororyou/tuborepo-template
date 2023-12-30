@@ -7,24 +7,24 @@ settings:
 importers:
   .:
     devDependencies:
+      '@config/eslint':
+        specifier: workspace:*
+        version: link:packages/configs/eslint
+      '@config/prettier':
+        specifier: workspace:*
+        version: link:packages/configs/prettier
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.1.1
         version: 4.1.1(prettier@3.1.1)
-      config-eslint:
+      '@packages/tsconfig':
         specifier: workspace:*
-        version: link:packages/configs/eslint
-      config-prettier:
-        specifier: workspace:*
-        version: link:packages/configs/prettier
+        version: link:packages/tsconfig
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
       prettier-plugin-tailwindcss:
         specifier: ^0.5.10
         version: 0.5.10(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier@3.1.1)
-      tsconfig:
-        specifier: workspace:*
-        version: link:packages/tsconfig
       turbo:
         specifier: ^1.11.2
         version: 1.11.2
