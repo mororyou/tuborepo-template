@@ -5,5 +5,9 @@
   "main": ".prettierrc.js",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10"
   }
 }
