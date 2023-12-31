@@ -1,0 +1,5 @@
+{
+  "extends": "@package/tsconfig",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
