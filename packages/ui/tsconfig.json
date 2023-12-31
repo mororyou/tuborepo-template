@@ -1,0 +1,12 @@
+{
+  "extends": "@package/tsconfig",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "moduleResolution": "node",
+    "outDir": "./dist"
+  }
+}
