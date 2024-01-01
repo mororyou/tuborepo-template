@@ -2,7 +2,8 @@
   "name": "@config/lintstaged",
   "version": "0.0.0",
   "private": true,
-  "main": ".lintstaged.js",
+  "license": "MIT",
+  "main": "config.json",
   "publishConfig": {
     "access": "public"
   }
